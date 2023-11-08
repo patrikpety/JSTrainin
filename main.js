@@ -1,6 +1,7 @@
 
-const buttons = document.querySelectorAll('button')
-let display = document.querySelector('.display')
+const calculator = document.querySelector('#calculatorWrap')
+const buttons = calculator.querySelectorAll('button')
+let display = calculator.querySelector('.display')
 const deleteAll = document.getElementById('deleteAll')
 const del = document.getElementById('delete')
 const result = document.getElementById('result')

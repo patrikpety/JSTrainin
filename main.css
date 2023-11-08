@@ -1,11 +1,30 @@
+#jsonTraining {
+  padding: 100px 0;
+}
+#jsonTraining .data {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#jsonTraining .data button {
+  display: block;
+  width: max-content;
+  cursor: pointer;
+}
+#jsonTraining .data .info {
+  text-align: center;
+}
+
 #calculatorWrap {
   width: 100vw;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#calculatorWrap .actions, #calculatorWrap .nums {
+#calculatorWrap .actions,
+#calculatorWrap .nums {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +52,9 @@
   width: 100%;
   margin: 0 auto;
 }
-#calculatorWrap .calculator .col-9, #calculatorWrap .calculator .col-3, #calculatorWrap .calculator .col-12 {
+#calculatorWrap .calculator .col-9,
+#calculatorWrap .calculator .col-3,
+#calculatorWrap .calculator .col-12 {
   padding: 0;
 }
 #calculatorWrap .calculator .display {

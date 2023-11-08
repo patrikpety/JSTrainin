@@ -1,80 +1,108 @@
-#calculatorWrap {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .actions, .nums { 
+#jsonTraining {
+	padding: 100px 0;
+    
+    .data {
         display: flex;
+        flex-direction: column;
+        gap: 30px;
         align-items: center;
         justify-content: center;
-        width: 100%;
-    }
 
-    button {
-        cursor: pointer;
-        padding: 10px 5px;
-        display: block;
-        text-align: center;
-        width: 100%;
-        border: 1px solid white;
-        
-        &:focus, &:active {
-            outline: none;
-            opacity: 0.6;
+        button {
+            display: block;
+            width: max-content;
+            cursor: pointer;
+        }
+
+        .info {
+            text-align: center;
         }
     }
 
-    .calculator{ 
-        border: 1px solid black;
-        border-radius: 16px;
-        padding-top: 20px;
-        overflow: hidden;
 
-        .row {
-            width: 100%;
-            margin: 0 auto;
-        }
-        
-        .col-9, .col-3, .col-12 {
-            padding: 0;
-        }
-        
-        .display {
-            text-align: right;
-            font-size: 25px;
-            line-height: 1.5;
-            padding: 0 10px;
-        }
+}
 
-        .actions {
-            button {
-                background-color: grey;
-                color: white;
-                flex: 1;
-            }
-        }
+#calculatorWrap {
+	width: 100vw;
+	// height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-        .nums {
-            button {
-                background-color: rgb(155, 154, 154);
-                color: white;
-                flex: 1;
-            }
+	.actions,
+	.nums {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
 
-            .null {
-                flex: 2;
-            }
-        }
-        
-        .operands {
-            width: 100%;
+	button {
+		cursor: pointer;
+		padding: 10px 5px;
+		display: block;
+		text-align: center;
+		width: 100%;
+		border: 1px solid white;
 
-            button {
-                background-color: orange;
-                color: white;
-            }
-        }
-    }
+		&:focus,
+		&:active {
+			outline: none;
+			opacity: 0.6;
+		}
+	}
+
+	.calculator {
+		border: 1px solid black;
+		border-radius: 16px;
+		padding-top: 20px;
+		overflow: hidden;
+
+		.row {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		.col-9,
+		.col-3,
+		.col-12 {
+			padding: 0;
+		}
+
+		.display {
+			text-align: right;
+			font-size: 25px;
+			line-height: 1.5;
+			padding: 0 10px;
+		}
+
+		.actions {
+			button {
+				background-color: grey;
+				color: white;
+				flex: 1;
+			}
+		}
+
+		.nums {
+			button {
+				background-color: rgb(155, 154, 154);
+				color: white;
+				flex: 1;
+			}
+
+			.null {
+				flex: 2;
+			}
+		}
+
+		.operands {
+			width: 100%;
+
+			button {
+				background-color: orange;
+				color: white;
+			}
+		}
+	}
 }
