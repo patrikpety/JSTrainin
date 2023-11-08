@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Patrik",
+        "surname": "Pety",
+        "position": "frontend junior"
+    },
+
+    {
+        "name": "Jozko",
+        "surname": "Mrkvicka",
+        "position": "frontend senior"
+    },
+
+    {
+        "name": "Pavol",
+        "surname": "Schodar",
+        "position": "backend mid"
+    }
+]

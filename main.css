@@ -1,0 +1,64 @@
+#calculatorWrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#calculatorWrap .actions, #calculatorWrap .nums {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#calculatorWrap button {
+  cursor: pointer;
+  padding: 10px 5px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  border: 1px solid white;
+}
+#calculatorWrap button:focus, #calculatorWrap button:active {
+  outline: none;
+  opacity: 0.6;
+}
+#calculatorWrap .calculator {
+  border: 1px solid black;
+  border-radius: 16px;
+  padding-top: 20px;
+  overflow: hidden;
+}
+#calculatorWrap .calculator .row {
+  width: 100%;
+  margin: 0 auto;
+}
+#calculatorWrap .calculator .col-9, #calculatorWrap .calculator .col-3, #calculatorWrap .calculator .col-12 {
+  padding: 0;
+}
+#calculatorWrap .calculator .display {
+  text-align: right;
+  font-size: 25px;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+#calculatorWrap .calculator .actions button {
+  background-color: grey;
+  color: white;
+  flex: 1;
+}
+#calculatorWrap .calculator .nums button {
+  background-color: rgb(155, 154, 154);
+  color: white;
+  flex: 1;
+}
+#calculatorWrap .calculator .nums .null {
+  flex: 2;
+}
+#calculatorWrap .calculator .operands {
+  width: 100%;
+}
+#calculatorWrap .calculator .operands button {
+  background-color: orange;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
