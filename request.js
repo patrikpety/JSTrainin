@@ -1,6 +1,6 @@
 let request = new XMLHttpRequest()
 
-request.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json')  
+request.open('GET', 'https://js-trainin.vercel.app/data.json')  
 request.onload = () => {
     let data = JSON.parse(request.responseText)
     console.log(data[0])
