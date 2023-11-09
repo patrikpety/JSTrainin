@@ -1,5 +1,5 @@
 
-const calculator = document.querySelector('#calculatorWrap')
+const calculator = document.getElementById('calculatorWrap')
 const buttons = calculator.querySelectorAll('button')
 let display = calculator.querySelector('.display')
 const deleteAll = document.getElementById('deleteAll')
@@ -9,7 +9,7 @@ const percentage = document.getElementById('percentage')
 
 let displayText = []
 
-buttons.forEach((btn) => {
+buttons.forEach(btn => {
 
     btn.addEventListener('click', () => {
         
@@ -19,38 +19,40 @@ buttons.forEach((btn) => {
         }
 
         if (btn.id === deleteAll.id) {
-            display.innerHTML = '0'
+            display.innerHTML = 0
             displayText = []
         }
 
         if (btn.id === percentage.id) {
             displayText.pop()
-            let calculated = eval((displayText.join('')/100))
+            let calculated = eval((displayText.join('') / 100))
             display.innerHTML = calculated
-            displayText = []
             displayText = [calculated]
         }
         
         if (btn.id === del.id) {
             displayText.pop()
-            display.innerHTML = displayText.join('')
+            let joinedArray = displayText.join('')
+            display.innerHTML = joinedArray
             
-            if (displayText.join('') === '') {
-                display.innerHTML = '0'
+            if (joinedArray === '') {
+                display.innerHTML = 0
                 displayText = []
             }
         }
         
         if (btn.id === result.id) {
+            let result
 
             if (displayText.join('') != '') {
-                display.innerHTML = eval(displayText.join(''))
-            } else {
-                displayText = [0]
-                display.innerHTML = displayText.join('')
+                result = eval(displayText.join(''))
+            } else {   
+                result = 0
                 displayText = []
             }
-        }
 
+            display.innerHTML = result
+        }
+    
     })
 });
