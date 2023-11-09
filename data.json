@@ -2,18 +2,30 @@
     {
         "name": "Patrik",
         "surname": "Pety",
-        "position": "frontend junior"
+        "position": "frontend junior",
+        "setup": {
+            "PC": "Macbook",
+            "OS": "iOS"
+        }
     },
 
     {
         "name": "Jozko",
         "surname": "Mrkvicka",
-        "position": "frontend senior"
+        "position": "frontend senior",
+        "setup": {
+            "PC": "Desktop",
+            "OS": "windows"
+        }
     },
 
     {
         "name": "Pavol",
         "surname": "Schodar",
-        "position": "backend mid"
+        "position": "backend mid",
+        "setup": {
+            "PC": "Acer",
+            "OS": "linux"
+        }
     }
 ]
