@@ -4,8 +4,8 @@
         "surname": "Pety",
         "position": "frontend junior",
         "setup": {
-            "PC": "Macbook",
-            "OS": "iOS"
+            "pc": "Macbook",
+            "os": "iOS"
         }
     },
 
@@ -14,8 +14,8 @@
         "surname": "Mrkvicka",
         "position": "frontend senior",
         "setup": {
-            "PC": "Desktop",
-            "OS": "windows"
+            "pc": "Desktop",
+            "os": "windows"
         }
     },
 
@@ -24,8 +24,8 @@
         "surname": "Schodar",
         "position": "backend mid",
         "setup": {
-            "PC": "Acer",
-            "OS": "linux"
+            "pc": "Acer",
+            "os": "linux"
         }
     }
 ]
